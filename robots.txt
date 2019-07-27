@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /korea/html/test.html
+Allow: /matching-fruits/
+* This is only a practice for SEO class.

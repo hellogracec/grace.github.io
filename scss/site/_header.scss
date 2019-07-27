@@ -1,0 +1,59 @@
+// Header Styles
+header {
+  position: relative;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+
+  @media screen and (min-width: 600px) {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    margin-left: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    img {
+      width: 300px;
+    }
+    @media (max-width: 370px) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    z-index: 9999;
+
+    .hamburger-icon {
+      width: 4em;
+    }
+  }
+
+  @media (min-width: $phoneLandscape) {
+    padding: 20px;
+  }
+  @media (min-width: $tabletLandscape) {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,63 @@
+// Banner Styles
+.banner {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15%;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  min-height: 600px;
+
+  .banner-title {
+    h1 {
+      font-size: 4em;
+      width: 10ch;
+      white-space: nowrap;
+      text-align: center;
+    }
+  }
+
+  .banner-sub-title {
+  }
+}
+
+// Glowing Effect on Banner
+// https://www.w3schools.com/howto/howto_css_glowing_text.asp
+.banner-title {
+  font-weight: 400;
+  webkit-animation: glow 2s ease-in-out infinite alternate;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #4b3c93, 0 0 10px #4b3c93, 0 0 15px #ffc0b8,
+      0 0 20px #ffc0b8, 0 0 25px #f3eeea;
+  }
+  to {
+    text-shadow: 0 0 10px #f3eeea, 0 0 15px #f3eeea, 0 0 20px #ffc0b8,
+      0 0 25px #ffc0b8, 0 0 30px #4b3c93;
+  }
+}
+
+.banner-sub-title {
+  font-weight: 400;
+  webkit-animation: glow 1.5s ease-in-out infinite alternate;
+  -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #f3eeea, 0 0 2px #ffc0b8, 0 0 3px #ffc0b8,
+      0 0 5px #ffc0b8, 0 0 7px #ffc0b8;
+  }
+  to {
+    text-shadow: 0 0 2px #ffc0b8, 0 0 4px #4b3c93, 0 0 6px #4b3c93,
+      0 0 8px #4b3c93, 0 0 10px #4b3c93;
+  }
+}
