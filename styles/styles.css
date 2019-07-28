@@ -197,42 +197,26 @@ header .overlay .closebtn:hover {
     height: 100vh;
     z-index: 999; }
     header .main-nav a {
-      border: rgba(243, 238, 234, 0.1) 2px solid;
-      border-radius: 4px;
       display: inline-block;
       padding: 0 10px;
-      -webkit-box-shadow: 2px 4px rgba(243, 238, 234, 0.5);
-      box-shadow: 2px 4px rgba(243, 238, 234, 0.5);
-      line-height: 1.5em;
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
       header .main-nav a:hover, header .main-nav a:focus, header .main-nav a:active {
-        opacity: 0.8;
-        background-color: rgba(243, 238, 234, 0.1);
-        -webkit-box-shadow: 2px 4px 3px rgba(243, 238, 234, 0.5);
-        box-shadow: 2px 4px 3px rgba(243, 238, 234, 0.5); }
+        opacity: 0.8; }
     header .main-nav ul {
       display: table-cell;
       vertical-align: middle; }
     header .main-nav .list-sub li {
-      margin: 15px;
-      text-align: center; }
+      margin: 15px 0; }
     header .main-nav .list-sub a {
-      border: rgba(255, 192, 184, 0.1) 2px solid;
-      border-radius: 4px;
       display: inline-block;
       padding: 0 5px;
-      -webkit-box-shadow: 2px 4px rgba(255, 192, 184, 0.5);
-      box-shadow: 2px 4px rgba(255, 192, 184, 0.5);
       -webkit-transition: all 0.6s ease-in-out;
       -o-transition: all 0.6s ease-in-out;
       transition: all 0.6s ease-in-out; }
       header .main-nav .list-sub a:hover, header .main-nav .list-sub a:focus, header .main-nav .list-sub a:active {
-        opacity: 0.8;
-        background-color: rgba(255, 192, 184, 0.1);
-        -webkit-box-shadow: 2px 4px 3px rgba(255, 192, 184, 0.5);
-        box-shadow: 2px 4px 3px rgba(255, 192, 184, 0.5); } }
+        opacity: 0.8; } }
 
 .hamburger {
   display: block;
