@@ -4,7 +4,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-143329719-1"
+      src="https://www.googletagmanager.com/gtag/js?id=UA-143329719-2"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,9 +13,8 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "UA-143329719-1");
+      gtag("config", "UA-143329719-2");
     </script>
-
     <!-- Favicon -->
     <link
       rel="apple-touch-icon-precomposed"
@@ -99,11 +98,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="Grace Cho is a web designer | front-end web developer | proud Vancouverite. Her passion is to go beyond expectation in all aspects from optimizing user experience to running smooth network."
+      content="I am a front-end web developer | UI developer based in Vancouver. My passion is to go beyond expectation in all aspects from optimizing user experience to running smooth network."
     />
     <meta
       name="keywords"
-      content="HTML, CSS, JavaScript, web developer, web designer, front end, developer, Vancouver"
+      content="HTML, CSS, JavaScript, PHP, React, web developer, web designer, front end, developer, Vancouver"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grace Cho | Front-End Web Developer</title>
@@ -114,427 +113,77 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+      .body-wrapper {
+        margin: 10% 20px;
+        height: calc(100vh - 20%);
+        overflow-y: hidden;
+      }
+
+      h1 {
+        font-size: 5em;
+        text-transform: uppercase;
+        text-shadow: 5px 5px #f3f3f5;
+        margin: 30px 0 80px 0;
+      }
+
+      span {
+        color: transparent;
+        -webkit-text-stroke-width: 5px;
+        -webkit-text-stroke-color: salmon;
+        text-shadow: 7px 7px #f3f3f5;
+      }
+
+      p {
+        margin: 20px 50px;
+      }
+
+      a {
+        white-space: nowrap;
+        color: #f3f3f5;
+        font-size: 2em;
+        margin: 20px 0;
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 4em;
+        }
+        p {
+          margin: 20px;
+        }
+        a {
+          font-size: 1.8em;
+        }
+      }
+      @media (max-width: 450px) {
+        h1 {
+          font-size: 3em;
+        }
+        p {
+          margin: 20px 0;
+        }
+        a {
+          font-size: 1.3em;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="/">
-          <img src="images/logo.png" alt="logo Hello Grace" />
-        </a>
-      </div>
-      <button class="hamburger">
-        <span onclick="openNav()">
-          <div class="hamburger-wrapper">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </span>
-      </button>
-      <div id="nav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          ><button class="hamburger-close">
-            <div class="hamburger-wrapper">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-          </button>
-        </a>
-        <nav class="overlay-nav">
-          <ul class="list">
-            <li><a href="/">Home</a></li>
-            <li class="list-project">
-              <a href="#work">Project</a>
-              <ul class="list-sub">
-                <li><a href="#dev">Dev</a></li>
-                <li><a href="#design">Design</a></li>
-              </ul>
-            </li>
-            <li><a href="#about">About</a></li>
-            <li>
-              <a href="mailto:hellogracec@gmail.com" target="_blank">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <nav class="main-nav">
-        <ul class="list">
-          <li><a href="/">Home</a></li>
-          <li class="list-project">
-            <a href="#work">Project</a>
-            <ul class="list-sub">
-              <li><a href="#dev">Dev</a></li>
-              <li><a href="#design">Design</a></li>
-            </ul>
-          </li>
-          <li><a href="#about">About</a></li>
-          <li>
-            <a href="mailto:hellogracec@gmail.com" target="_blank">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- END// Header and Nav -->
-    <main>
-      <div class="wrapper">
-        <!-- Main Banner -->
-        <section class="banner">
-          <div class="banner-title">
-            <h1>Hello<br />안녕하세요</h1>
-          </div>
-          <div class="banner-sub-title">
-            <h1>Learn</h1>
-            <h1>Grow</h1>
-            <h3>and</h3>
-            <h1>Share</h1>
-          </div>
-        </section>
-
-        <!-- Sections: Work List -->
-        <section class="work" id="work">
-          <div class="grid-container" id="dev">
-            <div class="section-media">
-              <img
-                src="assets/thumbnail-country.png"
-                alt="country website thumbnail"
-              />
-              <!-- icon-skills... been considering. -->
-              <!-- <img
-                class="icon-skills"
-                src="images/html5-light-red.png"
-                alt="HTML-CSS"
-              /> -->
-            </div>
-            <div class="section-lines">
-              <h2>Country Website</h2>
-              <h4>HTML5 / CSS</h4>
-              <p>
-                This is my very first project based on HTML/CSS including a main
-                navigation bar, HTML table, images and external links with
-                creative CSS styles.
-              </p>
-              <a
-                href="http://gcho.bcitwebdeveloper.ca/korea/"
-                class="btn-link"
-                target="_blank"
-                alt="Korea Website based on HTML-CSS"
-              >
-                <span class="btn-more">Visit Website</span></a
-              >
-            </div>
-          </div>
-          <div class="grid-container" id="dev">
-            <div class="section-media">
-              <img
-                src="assets/thumbnail-business.gif"
-                alt="Business Brochure Website"
-              />
-            </div>
-            <div class="section-lines">
-              <h2>Business Brochure Website</h2>
-              <h4>HTML5 / CSS, Sass</h4>
-              <p>
-                In this group project, I worked with
-                <a
-                  class="link-team"
-                  href="http://jtay.bcitwebdeveloper.ca/"
-                  target="_blank"
-                  >Jaeriah Tay</a
-                >
-                and
-                <a
-                  class="link-team"
-                  href="http://sgilkes.bcitwebdeveloper.ca/"
-                  target="_blank"
-                  >Steve Gilkes</a
-                >
-                using Git and Sass to build a business brochure website.
-              </p>
-              <a
-                href="http://gcho.bcitwebdeveloper.ca/SJC-Culinary-Service/"
-                class="btn-link"
-                target="_blank"
-                alt="SJC Culinary Service Business Website"
-              >
-                <span class="btn-more">Visit Website</span></a
-              >
-            </div>
-          </div>
-          <div class="grid-container">
-            <div class="section-media">
-              <style>
-                .embed-container {
-                  position: relative;
-                  padding-bottom: 56.25%;
-                  height: 0;
-                  overflow: hidden;
-                  max-width: 100%;
-                }
-                .embed-container iframe,
-                .embed-container object,
-                .embed-container embed {
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 102%;
-                  height: 100%;
-                }
-              </style>
-              <div class="embed-container">
-                <iframe
-                  src="https://www.youtube.com/embed//vmyCLY7crLg?autoplay=1"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <!-- icon-skills... been considering. -->
-              <!-- <img class="icon-skills" src="images/js.png" alt="JavaScript" /> -->
-            </div>
-            <div class="section-lines">
-              <h2>Matching Game</h2>
-              <h4>JavaScript</h4>
-              <p>
-                This project's goal is to implement JavaScript, HTML and CSS
-                properly. This is my first project based on HTML/CSS including a
-                main navigation bar, HTML table, images and external links with
-                creative CSS styles.
-              </p>
-              <a
-                href="http://gcho.bcitwebdeveloper.ca/matching-fruit/"
-                class="btn-link"
-                target="_blank"
-                alt="Matching Card Game based on JavaScript"
-              >
-                <span class="btn-more">Play Game</span>
-              </a>
-            </div>
-          </div>
-          <div class="grid-container" id="design">
-            <div class="section-media">
-              <img
-                src="assets/thumbnail-paw-wow.gif"
-                alt="Buisiness Site Mockup"
-              />
-            </div>
-            <div class="section-lines">
-              <h2>Photoshop Mockup</h2>
-              <h4>High Fidelity Mockup done in Photoshop and inVision.</h4>
-              <p>
-                I created a high-fidelity mockup about a virtual business
-                website of pet store called "PAW WOW" and simulated user
-                interaction in inVision.
-              </p>
-              <a
-                href="https://invis.io/A6SF14KR2UV"
-                class="btn-link"
-                target="_blank"
-                ><span class="btn-more">See Details</span></a
-              >
-            </div>
-          </div>
-          <div class="grid-container">
-            <div class="section-media">
-              <img src="assets/thumbnail-style-guide.gif" alt="Style Guide" />
-            </div>
-            <div class="section-lines">
-              <h2>Style Guide</h2>
-              <h4>Adobe InDesign</h4>
-              <p>
-                This project is based from my previous "PAW WOW" mockup. The
-                style guide covers logo, colors, typography, hierarchy, layout,
-                etc.
-              </p>
-              <a
-                href="assets/Project04-Style-Guide.pdf"
-                class="btn-link"
-                target="_blank"
-                ><span class="btn-more">See Details</span></a
-              >
-            </div>
-          </div>
-          <div class="grid-container">
-            <div class="section-media">
-              <img src="assets/thumbnail-portfolio.gif" alt="Portfolio" />
-            </div>
-            <div class="section-lines">
-              <h2>Portfolio Prototype</h2>
-              <h4>Adobe XD</h4>
-              <p>
-                This high-fidelity prototype in XD is based on my mockup which
-                is built in Photoshop.
-              </p>
-              <a
-                href="https://xd.adobe.com/view/0b93e697-9deb-446f-6ff1-86268f5ff9cc-7da2/"
-                class="btn-link"
-                target="_blank"
-                ><span class="btn-more">See Details</span></a
-              >
-            </div>
-          </div>
-          <div class="grid-container">
-            <div class="section-media">
-              <img src="assets/thumbnail-coming-soon.png" alt="Coming Soon" />
-            </div>
-            <div class="section-lines">
-              <h2>PHP</h2>
-              <h4>Coming soon.</h4>
-              <!-- <p></p> -->
-              <!-- <a
-                href="https://xd.adobe.com/view/0b93e697-9deb-446f-6ff1-86268f5ff9cc-7da2/"
-                class="btn-link"
-                target="_blank"
-                ><span class="btn-more">See Details</span></a
-              > -->
-            </div>
-          </div>
-          <div class="grid-container">
-            <div class="section-media">
-              <img src="assets/thumbnail-coming-soon.png" alt="Coming Soon" />
-            </div>
-            <div class="section-lines">
-              <h2>Wordpress</h2>
-              <h4>Coming soon.</h4>
-              <!-- <p></p> -->
-              <!-- <a
-                href="https://xd.adobe.com/view/0b93e697-9deb-446f-6ff1-86268f5ff9cc-7da2/"
-                class="btn-link"
-                target="_blank"
-                ><span class="btn-more">See Details</span></a
-              > -->
-            </div>
-          </div>
-          <div class="grid-container">
-            <div class="section-media">
-              <img src="assets/thumbnail-coming-soon.png" alt="Coming Soon" />
-            </div>
-            <div class="section-lines">
-              <h2>External Client Project</h2>
-              <h4>Coming soon.</h4>
-              <!-- <p></p> -->
-              <!-- <a
-                href="https://xd.adobe.com/view/0b93e697-9deb-446f-6ff1-86268f5ff9cc-7da2/"
-                class="btn-link"
-                target="_blank"
-                ><span class="btn-more">See Details</span></a
-              > -->
-            </div>
-          </div>
-        </section>
-
-        <!-- About -->
-        <section id="about">
-          <div class="about-detail">
-            <div class="about-title">
-              <h1>ABOUT</h1>
-              <h3>
-                Grace is a passionate front-end developer with solid UI/UX
-                skills based in Vancouver, BC.
-              </h3>
-            </div>
-            <div class="about-me">
-              <p>
-                Currently, she is studying at BCIT for web development and she
-                loves the fact that she grows everday.
-              </p>
-              <p>
-                She was born and raised in Seoul, Korea and moved to Canada in
-                2013.
-              </p>
-              <!-- More text -->
-              <div class="more-text">
-                <span>TMI</span>
-                <p>
-                  Her knowledge of various fields not only web development but
-                  also engineering (TMI, she once was a chemical engineer at
-                  Samsung Electronics) and hospitality makes great synergy for
-                  creative thinking and for understanding client’s needs.
-                </p>
-              </div>
-            </div>
-            <div class="about-drawing">
-              <h4>
-                Drawing is one of her favourite things to do and now she gets to
-                "draw" with codes on the web.
-              </h4>
-            </div>
-            <div class="slideshow-container cycle-slideshow">
-              <div class="cycle-pager"></div>
-              <img src="images/drawings/seoul.jpg" alt="photo of Seoul" />
-              <img
-                src="images/drawings/seoul-drawing.jpg"
-                alt="Seoul in watercolor"
-              />
-              <img
-                src="images/drawings/market-lady.jpg"
-                alt="photo of market lady"
-              />
-              <img
-                src="images/drawings/market-lady-drawing.jpg"
-                alt="pen drawing of market lady"
-              />
-              <img
-                src="images/drawings/plant.jpg"
-                alt="photo of plant leaves"
-              />
-              <img
-                src="images/drawings/plants-drawing.jpg"
-                alt="plant leaves in watercolor"
-              />
-              <img
-                src="images/drawings/cuba-car.jpg"
-                alt="photo of car in Cuba"
-              />
-              <img
-                src="images/drawings/cuba-car-drawing.jpg"
-                alt="pen drawing of car in Cuba"
-              />
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <!-- .main-area -->
-    <footer>
-      <div class="footer-container">
-        <p>&copy; 2019 Grace Cho | BCIT TWD Intake22</p>
-        <div class="sns">
-          <a
-            href="https://www.linkedin.com/in/hellogracec/"
-            target="_blank"
-            title="Linked In"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/hellogracec"
-            target="_blank"
-            title="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="mailto:hellogracec@gmail.com"
-            target="_blank"
-            title="instagram"
-          >
-            <i class="fas fa-envelope-square"></i
-          ></a>
-          <a
-            href="https://twitter.com/hellogracecho?ref_src=twsrc%5Etfw"
-            target="_blank"
-            title="Twitter"
-          >
-            <i class="fab fa-twitter"></i
-          ></a>
-        </div>
-      </div>
-    </footer>
-    <script src="scripts/scripts.js"></script>
-    <!-- Image Slide Animation -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts/jquery.cycle2.min.js"></script>
+    <div class="body-wrapper">
+      <h1><span>Graceful</span><br />things are<br />coming soon.</h1>
+      <p>
+        <a
+          href="https://www.linkedin.com/in/hellogracec/"
+          target="_blank"
+          title="Linked In"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+      </p>
+      <p>
+        <a href="mailto:info@hellogracecho.com" target="_blank" title="email">
+          <i class="fas fa-envelope-square"></i> info@hellogracecho.com</a
+        >
+      </p>
+    </div>
   </body>
 </html>

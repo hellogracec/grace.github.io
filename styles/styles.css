@@ -23,9 +23,7 @@ html {
 h1 {
   font-size: 3em;
   text-align: center;
-  background: -webkit-linear-gradient(salmon, #ffc0b8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: salmon;
   margin: 0;
   font-weight: 400; }
 
@@ -38,9 +36,7 @@ h2 {
 h3 {
   font-size: 1.5em;
   text-align: center;
-  background: -webkit-linear-gradient(#ffc0b8, #f3eeea);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #f3f3f5;
   margin: 0; }
 
 h4 {
