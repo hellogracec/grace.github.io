@@ -68,7 +68,7 @@
 
 // Clipping Mast
 .more-text {
-  background-color: $myWhite;
+  background-color: $subColor;
   position: relative;
   -webkit-clip-path: circle(20% at 0 50%);
   clip-path: circle(20% at 0 50%);
@@ -78,7 +78,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: rgba($myWhite, 0);
+    background-color: rgba($subColor, 0);
     -webkit-clip-path: circle(100% at 50% 50%);
     clip-path: circle(100% at 50% 50%);
   }
@@ -88,7 +88,7 @@
     top: 50%;
     left: 5%;
     transform: translate(-10%, -50%);
-    color: $myPurple;
+    color: $backgroundColor;
     transition: color 0.5s;
   }
 

@@ -68,14 +68,14 @@ section {
 
 .link-team {
   text-decoration: none;
-  color: $myPink;
+  color: $mainColor;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
 
   &:hover,
   &:focus,
   &:active {
-    color: $myWhite;
-    text-shadow: 2px 3px 2px $myPink;
+    color: $subColor;
+    text-shadow: 2px 3px 2px $mainColor;
   }
 }

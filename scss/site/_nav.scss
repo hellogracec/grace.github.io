@@ -2,7 +2,7 @@
 header nav {
   a {
     display: block;
-    color: $myWhite;
+    color: $subColor;
     font-size: 1.5em;
     // -webkit-transform: rotate(-25deg);
     // -ms-transform: rotate(-25deg);
@@ -34,7 +34,7 @@ header nav {
 
     a {
       font-size: 1.2em;
-      color: $myPink;
+      color: $mainColor;
     }
   }
 }
@@ -101,7 +101,7 @@ header {
     top: 20px;
     right: 30px;
     font-size: 30px;
-    color: $myWhite;
+    color: $subColor;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
@@ -130,12 +130,12 @@ header {
 
       // Box styles
       a {
-        // border: rgba($myWhite, 0.1) 2px solid;
+        // border: rgba($subColor, 0.1) 2px solid;
         // border-radius: 4px;
         display: inline-block;
         padding: 0 10px;
-        // -webkit-box-shadow: 2px 4px rgba($myWhite, 0.5);
-        // box-shadow: 2px 4px rgba($myWhite, 0.5);
+        // -webkit-box-shadow: 2px 4px rgba($subColor, 0.5);
+        // box-shadow: 2px 4px rgba($subColor, 0.5);
         // line-height: 1.5em;
         -webkit-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
@@ -144,10 +144,7 @@ header {
         &:hover,
         &:focus,
         &:active {
-          opacity: 0.8;
-          // background-color: rgba($myWhite, 0.1);
-          // -webkit-box-shadow: 2px 4px 3px rgba($myWhite, 0.5);
-          // box-shadow: 2px 4px 3px rgba($myWhite, 0.5);
+          text-decoration: underline;
         }
       }
 
@@ -162,12 +159,12 @@ header {
         }
         // Box styles
         a {
-          // border: rgba($myPink, 0.1) 2px solid;
+          // border: rgba($mainColor, 0.1) 2px solid;
           // border-radius: 4px;
           display: inline-block;
           padding: 0 5px;
-          // -webkit-box-shadow: 2px 4px rgba($myPink, 0.5);
-          // box-shadow: 2px 4px rgba($myPink, 0.5);
+          // -webkit-box-shadow: 2px 4px rgba($mainColor, 0.5);
+          // box-shadow: 2px 4px rgba($mainColor, 0.5);
           -webkit-transition: all 0.6s ease-in-out;
           -o-transition: all 0.6s ease-in-out;
           transition: all 0.6s ease-in-out;
@@ -176,9 +173,9 @@ header {
           &:focus,
           &:active {
             opacity: 0.8;
-            // background-color: rgba($myPink, 0.1);
-            // -webkit-box-shadow: 2px 4px 3px rgba($myPink, 0.5);
-            // box-shadow: 2px 4px 3px rgba($myPink, 0.5);
+            // background-color: rgba($mainColor, 0.1);
+            // -webkit-box-shadow: 2px 4px 3px rgba($mainColor, 0.5);
+            // box-shadow: 2px 4px 3px rgba($mainColor, 0.5);
           }
         }
       }

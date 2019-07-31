@@ -7,7 +7,7 @@
   .hamburger-wrapper {
     .line {
       height: 5px;
-      background: rgba($myWhite, 0.8);
+      background: rgba($subColor, 0.8);
       margin: 6px;
       border-radius: 5px;
       -webkit-transition: 0.3s ease-in-out;
@@ -30,7 +30,7 @@
 
   &:hover {
     .line {
-      background: rgba($myPink, 0.8);
+      background: rgba($mainColor, 0.8);
     }
   }
 }
@@ -45,7 +45,7 @@
   .hamburger-wrapper {
     .line {
       height: 5px;
-      background: rgba($myWhite, 0.8);
+      background: rgba($subColor, 0.8);
       margin: 6px;
       border-radius: 5px;
       -webkit-transition: 0.3s ease-in-out;
@@ -67,7 +67,7 @@
   }
   &:hover {
     .line {
-      background: rgba($myPink, 0.8);
+      background: rgba($mainColor, 0.8);
     }
   }
 }
