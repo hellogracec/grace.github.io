@@ -1,0 +1,68 @@
+// Mixins
+
+// Centering Element with Margin
+@mixin margin-center {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+// Clearing Out Margins and Padding
+// Setting the line-height to Set the Variable
+@mixin flatten {
+  margin: 0;
+  padding: 0;
+}
+
+// Grid Layout Styles
+@mixin grid($grid-column) {
+  display: grid;
+  grid-template-columns: repeat($grid-column, 1fr);
+  grid-gap: 5px;
+}
+
+// General Flex box with space between
+@mixin flex-general {
+  display: flex;
+  justify-content: space-between;
+}
+
+// Center Elements in a Flex Container
+@mixin flex-center($flexDirection) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $flexDirection;
+}
+
+// Link Tags Styles None
+@mixin link-st {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+// Position Relative & Absolute Styles
+@mixin position-rel {
+  position: relative;
+}
+@mixin position-ab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 20px;
+}
+
+// Image Styles
+// Hover Scale Zoom In + Grayscale
+@mixin zoom($grayScale) {
+  display: block;
+  transition: all 0.7s ease-in-out;
+  #{$link-hover-selector} {
+    transform: scale(1.3);
+    filter: grayscale($grayScale);
+  }
+}

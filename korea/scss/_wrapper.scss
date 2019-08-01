@@ -1,0 +1,7 @@
+// Wrapper Styles
+
+.wrapper {
+    max-width: 1200px;
+    background-color: white;
+    @include margin-center;
+  }

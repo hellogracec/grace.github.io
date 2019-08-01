@@ -1,0 +1,50 @@
+// Header Styles
+
+header {
+  @include flex-general;
+  height: $header-height;
+  padding-right: 20px;
+
+  a {
+    @include flex-general;
+    @include link-st;
+    @include flex-center(row);
+    img {
+      height: $header-height * 0.8;
+    }
+    h1 {
+      margin: 0;
+      #{$link-hover-selector} {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  @media screen and (max-width: $phoneLandscape) {
+    flex-wrap: wrap;
+    height: 100%;
+    line-height: 40px;
+    nav {
+      width: 100%;
+    }
+  }
+
+  .btn-menu {
+    display: none;
+
+    @media (max-width: $phoneLandscape) {
+      display: block;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2em;
+      font-family: "HangeulNuri-Bold";
+      font-weight: bold;
+      font-style: normal;
+      padding: 0;
+      #{$link-hover-selector} {
+        opacity: 0.5;
+      }
+    }
+  }
+}

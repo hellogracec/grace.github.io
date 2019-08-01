@@ -1,0 +1,100 @@
+// Culture
+.grid-container-hangeul {
+  @include flex-general;
+
+  .hangeul-img {
+    margin-right: 20px;
+  }
+  .hangeul-text {
+    @include flex-center(column);
+  }
+
+  @media screen and (max-width: $tabletPortrait) {
+    display: block;
+    .hangeul-text {
+      display: block;
+    }
+    .hangeul-img {
+      float: left;
+      margin-right: 10px;
+      width: 40vw;
+      height: 100%;
+
+      @media screen and (max-width: $phonePortrait) {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // @include grid(6);
+
+  // .hangeul-img {
+  //   grid-column: span 2;
+  //   margin: auto 0;
+  // }
+
+  // .hangeul-text {
+  //   grid-column: span 4;
+  //   @include flex-center(column);
+  // }
+
+  // @media (max-width: $phoneLandscape) {
+  //   .hangeul-img {
+  //     grid-column: span 3;
+  //   }
+  //   .hangeul-text {
+  //     grid-column: span 3;
+  //   }
+  // }
+  // @media (max-width: $phonePortrait) {
+  //   display: block;
+  //   .hangeul-img {
+  //     display: block;
+  //     margin: 0 auto;
+  //   }
+  // }
+}
+
+.culture-table {
+  display: block;
+  @include margin-center;
+}
+.culture-gallery {
+  @include flex-general;
+
+  figure {
+    width: 24.5%;
+    overflow: hidden;
+  }
+  img {
+    @include zoom(0);
+  }
+
+  @media (max-width: $phoneLandscape) {
+    @include grid(2);
+
+    figure {
+      width: 100%;
+    }
+  }
+}
+
+.grid-container-kpop {
+  @include grid(4);
+
+  .kpop-video {
+    grid-column: span 2;
+  }
+
+  .kpop-text {
+    grid-column: span 2;
+    @include flex-center(column);
+  }
+
+  @media (max-width: $phoneLandscape) {
+    display: block;
+  }
+}

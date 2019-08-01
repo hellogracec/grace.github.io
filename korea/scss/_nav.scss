@@ -1,0 +1,45 @@
+// Nav Styles
+header nav {
+  width: 50%;
+
+  ul {
+    margin: 0;
+    @include flex-general;
+    @include link-st;
+
+    li {
+      line-height: $header-height;
+      flex: 1;
+    }
+
+    a {
+      @include link-st;
+      #{$link-hover-selector} {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: $phoneLandscape) {
+  header nav {
+    display: none;
+    width: 100%;
+
+    &.show {
+      display: block;
+    }
+
+    ul {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      display: block;
+      text-align: right;
+      line-height: 40px;
+      // padding-right: 20px;
+    }
+  }
+}
