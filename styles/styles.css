@@ -263,7 +263,7 @@ header .overlay .closebtn:hover {
 
 body {
   margin: 10px 0;
-  background: #dcba9c;
+  background: #dfb9a9d4;
   overflow-x: hidden; }
 
 .wrapper {
@@ -442,7 +442,7 @@ section .section-media {
     top: 50%;
     left: 5%;
     transform: translate(-10%, -50%);
-    color: #dcba9c;
+    color: #dfb9a9d4;
     transition: color 0.5s; }
   .more-text:hover span {
     color: rgba(255, 255, 255, 0); }
@@ -509,7 +509,7 @@ section .btn-link {
     text-transform: uppercase;
     font-weight: 900;
     padding: 5px 8px;
-    color: #dcba9c;
+    color: #dfb9a9d4;
     background-color: #f3f3f5;
     border-radius: 5px;
     -webkit-transition: all 0.3s ease-in-out;
