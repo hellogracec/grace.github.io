@@ -116,8 +116,10 @@
     <style>
       .body-wrapper {
         margin: 0 20px;
-        height: calc(100vh - 20%);
-        overflow-y: hidden;
+        height: calc(100vh - 40px);
+        display: flex;
+        flex-direction: column;
+        /* overflow-y: hidden; */
       }
 
       h1 {
@@ -210,7 +212,7 @@
       });
       window.sr = ScrollReveal();
       sr.reveal(".contact", {
-        duration: 2000,
+        duration: 1500,
         delay: 2000
         // origin: "bottom",
         // distance: "300px"
