@@ -109,112 +109,52 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/styles.css" />
-    <style>
-      body {
-        background: #f2d6d4;
-      }
-      .body-wrapper {
-        margin: 0 20px;
-        height: calc(100vh - 40px);
-        display: flex;
-        flex-direction: column;
-      }
-
-      h1 {
-        font-size: 5em;
-        text-transform: uppercase;
-        text-shadow: 5px 5px #f3f3f5;
-        margin: 0;
-      }
-
-      span {
-        color: #f3f3f5;
-        text-shadow: 5px 5px salmon;
-      }
-
-      p {
-        margin: 20px 50px;
-        text-align: center;
-      }
-
-      a {
-        white-space: nowrap;
-        color: #f3f3f5;
-        font-size: 2em;
-        margin: 20px 0;
-      }
-
-      .banner {
-        height: 100%;
-      }
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 4em;
-          font-weight: 700;
-        }
-        p {
-          margin: 20px;
-        }
-        a {
-          font-size: 1.8em;
-          font-weight: 700;
-        }
-      }
-      @media (max-width: 450px) {
-        h1 {
-          font-size: 3em;
-        }
-        p {
-          margin: 20px 0;
-        }
-        a {
-          font-size: 1.3em;
-        }
-      }
-    </style>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
   <body>
-    <div class="body-wrapper">
-      <div class="banner">
-        <h1><span>Graceful</span><br />things are<br />coming soon.</h1>
+    <header>
+      <div class="logo">
+        <a href="">Grace</a>
       </div>
-      <div class="contact">
-        <p>
-          <a
-            href="https://www.linkedin.com/in/hellogracecho/"
-            target="_blank"
-            title="Linked In"
-            ><i class="fab fa-linkedin"></i> LinkedIn</a
-          >
-        </p>
-        <p>
-          <a href="mailto:info@hellogracecho.com" target="_blank" title="email">
-            <i class="fas fa-envelope-square"></i> info@hellogracecho.com</a
-          >
-        </p>
+      <div class="nav">
+        <ul>
+          <li><a href="">work</a></li>
+          <li><a href="">about</a></li>
+        </ul>
       </div>
+    </header>
+    <div class="contact">
+      <ul>
+        <li>
+          <a href="mailto:info@hellogracecho.com" target="_blank"
+            >info@hellogracecho.com</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/hellogracec/" target="_blank"
+            >Linkedin.com/in/hellogracecho</a
+          ><br />
+          <a href="http://gcho.bcitwebdeveloper.ca" target="_blank"
+            >BCIT TWD Student Page</a
+          >
+        </li>
+        <li><a href="images/Resume.pdf" target="_blank">resume</a></li>
+      </ul>
     </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.js"
-      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
-      window.sr = ScrollReveal();
-      sr.reveal(".banner", {
-        duration: 3000,
-        delay: 500
-      });
-      window.sr = ScrollReveal();
-      sr.reveal(".contact", {
-        duration: 1500,
-        delay: 2000
-        // origin: "bottom",
-        // distance: "300px"
-      });
-    </script>
+    <main>
+      <section>
+        <div class="intro">
+          <span
+            >Hello,<br />I’m Grace Cho, front-end Web Developer / UI Developer.
+            <br />Currently I am studying technical web development at BCIT,
+            graduating this October 2019. <br />I am looking for an opportunity
+            to join the strong team as another strong teammate.</span
+          >
+        </div>
+        <a href="images/Resume.pdf" target="_blank">
+          <img src="images/Resume.png" alt="Grace Cho Resume" />
+        </a>
+      </section>
+    </main>
+    <footer>&copy; 2019 Grace Cho</footer>
   </body>
 </html>
