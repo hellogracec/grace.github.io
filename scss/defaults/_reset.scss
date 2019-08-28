@@ -7,6 +7,14 @@
 
 html {
   scroll-behavior: smooth;
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    list-style: none;
+  }
 }
 
 img {
@@ -14,8 +22,4 @@ img {
   border: 0;
   width: 100%;
   height: auto;
-}
-
-html a {
-  text-decoration: none;
 }

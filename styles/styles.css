@@ -1,5 +1,5 @@
 /* CSS Document */
-@import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,400i,700,700i,900,900i|Montserrat:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap");
 *,
 *::before,
 *::after {
@@ -7,6 +7,10 @@
 
 html {
   scroll-behavior: smooth; }
+  html a {
+    text-decoration: none; }
+  html li {
+    list-style: none; }
 
 img {
   display: block;
@@ -14,72 +18,51 @@ img {
   width: 100%;
   height: auto; }
 
-html a {
-  text-decoration: none; }
-
 html {
   font-family: "Montserrat", sans-serif; }
 
-section .section-media {
+header {
+  background: #f07e71;
+  height: 60px;
+  font-size: 2em;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; }
+  header * {
+    color: #f3f3f5; }
+  header .nav ul {
+    margin: 0;
+    display: flex; }
+  header .nav li {
+    text-align: center;
+    width: 150px; }
+  header .nav a {
+    padding: 0 20px; }
+    header .nav a:hover, header .nav a:focus, header .nav a:active {
+      border: 4px #f3f3f5 solid; }
+
+.contact {
+  background: #e8e86d;
+  position: fixed;
   width: 100%;
-  object-fit: cover;
-  align-self: center; }
-  section .section-media .video-prototype {
-    width: 100%;
-    height: auto; }
-@media screen and (min-width: 850px) {
-  section {
-    max-width: 1000px;
-    margin: 0 170px 0 auto; } }
-@media screen and (min-width: 1340px) {
-  section {
-    margin: 0 auto; } }
+  height: 100px; }
+  .contact * {
+    font-size: 1em;
+    color: #707070; }
+  .contact ul {
+    margin: 20px 200px 20px 60px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; }
+  .contact li {
+    margin-right: 80px;
+    padding: 10px; }
+  .contact a:hover, .contact a:focus, .contact a:active {
+    text-decoration: underline; }
 
-.banner {
-  margin: 0 auto; }
-
-.work {
-  display: grid;
-  grid-gap: 60px;
-  margin-bottom: 40px; }
-  @media (min-width: 850px) {
-    .work {
-      grid-gap: 80px;
-      margin-bottom: 120px; } }
-
-.grid-container {
-  display: grid;
-  grid-gap: 20px; }
-  @media screen and (min-width: 800px) {
-    .grid-container {
-      display: grid;
-      grid-template-columns: 3fr 2fr;
-      grid-gap: 20px; }
-      .grid-container .section-lines {
-        align-self: center; } }
-
-.section-media {
-  position: relative; }
-
-.section-lines h4 {
-  margin: 5px 0 10px 0; }
-  @media (min-width: 850px) {
-    .section-lines h4 {
-      margin: 15px 0; } }
-
-.icon-skills {
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 100px; }
-
-.link-team {
-  text-decoration: none;
-  color: salmon;
-  font-weight: 700;
-  transition: all 0.3s ease-in-out; }
-  .link-team:hover, .link-team:focus, .link-team:active {
-    color: #f3f3f5;
-    text-shadow: 2px 3px 2px salmon; }
+body {
+  background: #f2d6d4;
+  margin: 0; }
 
 /*# sourceMappingURL=styles.css.map */

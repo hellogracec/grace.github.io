@@ -1,3 +1,35 @@
 // Header Styles
 header {
+  background: $myPink;
+  height: 60px;
+  font-size: 2em;
+  line-height: 60px;
+  * {
+    color: $textWhite;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  .nav {
+    ul {
+      margin: 0;
+      display: flex;
+    }
+
+    li {
+      text-align: center;
+      width: 150px;
+    }
+
+    a {
+      padding: 0 20px;
+      &:hover,
+      &:focus,
+      &:active {
+        border: 4px $textWhite solid;
+      }
+    }
+  }
 }
