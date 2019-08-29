@@ -119,3 +119,7 @@ footer {
 .nav {
   display: none;
 }
+
+.btn-resume a {
+  color: #f07e71;
+}
